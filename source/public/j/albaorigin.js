@@ -1,5 +1,5 @@
 // Author : rainygirl : rainygirl.com
-// Thanks to : Mr. Kim Moon Soo
+// Thanks to : Mr. Kim Jae Jin & Dojisa. Kim Moon Soo
 // License : GPL
 
 $.fn.extend({
