@@ -1,0 +1,12 @@
+{
+    "name": "albacoroke"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "express": "2.5.1",
+      "ejs": ">= 0.0.1",
+      "mongodb": ">= 0.0.1",
+	  "ntwitter": ">= 0.0.1",
+      "forever": ">= 0.0.1"
+  }
+}
