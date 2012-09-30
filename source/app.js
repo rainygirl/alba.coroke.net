@@ -57,7 +57,7 @@ var streamTwitter=function(){
 					collectionTwitter.find({idstr:datas[i].id_str.toString()},{},function(err,cursor){
 						var tweet=datas[i];
 						cursor.toArray(function(err,existitems) {
-							if(existitems == null || existitems.length>0) return;
+							if(existitems != null && existitems.length>0) return;
 							var now=new Date(tweet.created_at);
 							collectionTwitter.insert({account:tweet.user.screen_name,idstr:tweet.id_str.toString(),text:tweet.text,created_at:now,hour:now.getHours(),day:now.getDay()},function(err,ditem){
 								console.log('added : '+ ditem[0].idstr+'/'+ditem[0].account+'/'+ditem[0].text);
